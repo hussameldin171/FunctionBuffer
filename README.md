@@ -5,6 +5,6 @@
 
 ## Features
 - **Fixed-Size Buffer:** Stores callable objects in a preallocated, stack-based buffer, avoiding dynamic memory allocation.
-- **Configurable Buffer Size:** Customize the buffer size via a template parameter to fit your specific needs.
+- **Configurable Buffer Size:** Customize the buffer size via a configuration parameter to fit your needs.
 - **Supports Various Callables:** Works with function pointers, lambdas, and functors.
 - **Optimized for Performance:** Minimal overhead and suitable for real-time and memory-constrained environments.
