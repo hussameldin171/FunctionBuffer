@@ -166,6 +166,9 @@ public:
     //Move Assignment Operator:
     FunctionBuffer& operator=(FunctionBuffer&& other)
     {
+        if(m_func != nullptr){
+            m_func->~FunctionConcept();
+        }
         std::copy(other.m_buffer , other.m_buffer+MAX_BUFFER_SIZE , m_buffer);
         m_func = reinterpret_cast<FunctionConcept *>(buffer_address);
         other.m_func = nullptr;
